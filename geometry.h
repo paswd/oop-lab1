@@ -1,5 +1,5 @@
-#ifndef _GEOMETRY_H_
-#define _GEOMETRY_H_
+#ifndef GEOMETRY_H
+#define GEOMETRY_H
 
 class Position
 {

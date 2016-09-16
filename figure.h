@@ -1,16 +1,12 @@
-#ifndef _FIGURE_H_
-#define _FIGURE_H_
+#ifndef FIGURE_H
+#define FIGURE_H
 
-#include <string>
-#include "geometry.h"
-
-class Figure
-{
+class Figure {
 public:
-	string color;
-	string border;
-	Position pos;
-}
+	virtual double Square() = 0;
+	virtual void Print() = 0;
+	virtual ~Figure() {};
+};
 
 
-#endif
+#endif /* FIGURE_H */

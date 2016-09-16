@@ -4,9 +4,15 @@
 #include <string>
 #include "geometry.h"
 
-class Square : Figure
+class Square : public Figure
 {
+private:
+	double width;
 public:
+	Square();
+	~Square();
+	double Figure_square() override;
+	double Print() override;
 	
 }
 

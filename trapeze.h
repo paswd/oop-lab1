@@ -4,7 +4,7 @@
 #include <string>
 #include "geometry.h"
 
-class Trapeze : Figure
+class Trapeze : public Figure
 {
 public:
 	string color;
