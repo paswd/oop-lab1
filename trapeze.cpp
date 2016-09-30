@@ -17,7 +17,7 @@ Trapeze::Trapeze(std::istream &is) {
 	this->pos1.Input(is);
 	this->pos2.Input(is);
 	is >> this->LenA;
-	is >> this->LenA;
+	is >> this->LenB;
 }
 Trapeze::Trapeze(const Trapeze &orig) {
 	this->pos1 = orig.pos1;

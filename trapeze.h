@@ -16,7 +16,7 @@ public:
 	void Print() override;
 	virtual ~Trapeze();
 private:
-	Posinion pos1;
+	Position pos1;
 	Position pos2;
 	double LenA;
 	double LenB;

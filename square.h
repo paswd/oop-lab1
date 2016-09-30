@@ -16,7 +16,7 @@ public:
 	void Print() override;
 	virtual ~FSquare();
 private:
-	Posinion pos;
+	Position pos;
 	double len;
 };
 #endif /* FSQUARE_H */

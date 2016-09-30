@@ -16,7 +16,7 @@ public:
 	void Print() override;
 	virtual ~Rectangle();
 private:
-	Posinion pos;
+	Position pos;
 	double LenA;
 	double LenB;
 };
