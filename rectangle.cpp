@@ -1,6 +1,7 @@
-#include "rectangle.h"
 #include <iostream>
 #include <cmath>
+#include "geometry.h"
+#include "rectangle.h"
 
 using namespace std;
 
@@ -8,7 +9,7 @@ using namespace std;
 
 }*/
 
-Rectangle::Rectangle(Posinion in_pos, double len_a, double len_b) : pos(in_pos), LenA(len_a), LenB(len_b) {
+Rectangle::Rectangle(Position in_pos, double len_a, double len_b) : pos(in_pos), LenA(len_a), LenB(len_b) {
 	cout << "Rectangle created:" << endl;
 	this->Print();
 }

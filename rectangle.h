@@ -4,12 +4,13 @@
 #include <cstdlib>
 #include <iostream>
 #include "figure.h"
+#include "geometry.h"
 
 class Rectangle : public Figure {
 public:
 	//Rectangle();
 	Rectangle(std::istream &is);
-	Rectangle(Posinion in_pos, double len_a, double len_b);
+	Rectangle(Position in_pos, double len_a, double len_b);
 	Rectangle(const Rectangle &orig);
 	double Square() override;
 	void Print() override;

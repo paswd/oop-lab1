@@ -1,34 +1,35 @@
-#include "square.h"
 #include <iostream>
 #include <cmath>
+#include "geometry.h"
+#include "square.h"
 
 using namespace std;
 
-/*Square::Square() : Square(0, 0, 0) {
+/*FSquare::FSquare() : FSquare(0, 0, 0) {
 
 }*/
 
-Square::Square(Posinion in_pos, double length) : pos(in_pos), len(length) {
-	cout << "Square created:" << endl;
+FSquare::FSquare(Position in_pos, double length) : pos(in_pos), len(length) {
+	cout << "FSquare created:" << endl;
 	this->Print();
 }
-Square::Square(std::istream &is) {
+FSquare::FSquare(std::istream &is) {
 	this->pos.Input(is);
 	is >> this->len;
 }
-Square::Square(const Square &orig) {
+FSquare::FSquare(const FSquare &orig) {
 	this->pos = orig.pos;
 	this->len = orig.len;
-	cout << "Square copy created" << std::endl;
+	cout << "FSquare copy created" << std::endl;
 }
-double Square::Square() {
+double FSquare::Square() {
 	return this->len * this->len;
 }
-void Square::Print() {
+void FSquare::Print() {
 	cout << "Position: ";
 	this->pos.Print();
 	cout << "Side length: " << this->len << endl;
 }
-Square::~Square() {
-	cout << "Square deleted" << std::endl;
+FSquare::~FSquare() {
+	cout << "FSquare deleted" << std::endl;
 }

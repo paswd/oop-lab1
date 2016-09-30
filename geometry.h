@@ -10,5 +10,7 @@ public:
 	void Print();
 };
 
+double Absolute(double num);
+
 
 #endif /* GEOMETRY_H */
