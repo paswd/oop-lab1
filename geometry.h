@@ -1,12 +1,14 @@
 #ifndef GEOMETRY_H
 #define GEOMETRY_H
 
-class Position
-{
+class Position {
 public:
 	double x;
 	double y;
-}
+
+	void Input(std::istream &is);
+	void Print();
+};
 
 
-#endif
+#endif /* GEOMETRY_H */

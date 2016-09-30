@@ -1,20 +1,22 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
+
 #include <cstdlib>
 #include <iostream>
 #include "figure.h"
-class Triangle : public Figure {
+
+class Rectangle : public Figure {
 public:
-	Triangle();
-	Triangle(std::istream &is);
-	Triangle(size_t i,size_t j,size_t k);
-	Triangle(const Triangle& orig);
+	//Rectangle();
+	Rectangle(std::istream &is);
+	Rectangle(Posinion in_pos, double len_a, double len_b);
+	Rectangle(const Rectangle &orig);
 	double Square() override;
 	void Print() override;
-	virtual ~Triangle();
+	virtual ~Rectangle();
 private:
-	size_t side_a;
-	size_t side_b;
-	size_t side_c;
+	Posinion pos;
+	double LenA;
+	double LenB;
 };
-#endif /* TRIANGLE_H */
+#endif /* RECTANGLE_H */

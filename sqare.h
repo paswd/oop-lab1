@@ -1,20 +1,21 @@
-#ifndef _SQUARE_H_
-#define _SQUARE_H_
+#ifndef SQUARE_H
+#define SQUARE_H
 
-#include <string>
-#include "geometry.h"
+#include <cstdlib>
+#include <iostream>
+#include "figure.h"
 
-class Square : public Figure
-{
-private:
-	double width;
+class Square : public Figure {
 public:
-	Square();
-	~Square();
-	double Figure_square() override;
-	double Print() override;
-	
-}
-
-
-#endif
+	//Square();
+	Square(std::istream &is);
+	Square(Posinion in_pos, double length);
+	Square(const Square &orig);
+	double Square() override;
+	void Print() override;
+	virtual ~Square();
+private:
+	Posinion pos;
+	double len;
+};
+#endif /* SQUARE_H */
